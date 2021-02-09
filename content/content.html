@@ -1,0 +1,144 @@
+<div id="spider-wrapper" class="spider-ext">
+  <div id="spider" class="spider-ext">
+    <div id="spider-header" class="spider-ext">
+      <input
+        spellcheck="true"
+        id="spider-fileName"
+        class="spider-ext"
+        value="New Project"
+      />
+
+      <div class="spider-ext" id="spider-action">
+        <h4 class="spider-ext spider-text">
+          Multi Selection
+        </h4>
+        <input id="spider-tagoption" type="checkbox" class="spider-ext" />
+        <label
+          class="spider-ext"
+          for="spider-tagoption"
+          id="spider-tagoption-label"
+        ></label>
+        <button class="spider-ext spider-button" id="spider-saveAll">
+          Save
+        </button>
+
+<!--        <button class="spider-ext spider-button spider-btn" id="spider-schedule">-->
+<!--          Schedule-->
+<!--        </button>-->
+
+
+        <div id="spider-morebtn" class="spider-ext">
+          <button class="spider-ext spider-button spider-btn spider-triggerdropdown" id="spider-schedule">
+            Schedule
+          </button>
+          <ul id="spider-moredropdown" class="spider-ext spider-dropdown spider-schedule-inputs">
+            <li class="spider-ext spider-schedule-inputs-li">
+              <div class="spider-ext">Schedule Date</div>
+              <input id="spider-schedule-date" class="spider-ext" type="datetime-local">
+            </li>
+
+            <!-- <li class="spider-ext spider-schedule-inputs-li">
+              <div class="spider-ext">Pages</div>
+              <input id="spider-schedule-pages" class="spider-ext" type="number">
+            </li> -->
+
+            <li class="spider-ext spider-schedule-inputs-li">
+              <div class="spider-ext">Databases</div>
+<!-- <input id="spider-schedule-pages" class="spider-ext" type="number">-->
+
+              <select class="spider-ext spider-schedule-inputs-li" name="" id="">
+                <option value="Dynamodb">Dynamodb</option>
+                <option value="S3">S3</option>
+                <option value="Mysql">Mysql</option>
+                <option value="Postgresql">Postgresql</option>
+                <option value="Oracle">Oracle</option>
+                <option value="Elasticsearch">Elasticsearch</option>
+              </select>
+
+            </li>
+
+            <li class="spider-ext spider-schedule-inputs-li">
+              <button class="spider-ext spider-button spider-btn" id="spider-schedule-save">
+                Schedule
+              </button>
+            </li>
+            
+            <!-- 
+            <li style="margin-top: -8px;" class="spider-ext spider-schedule-inputs-li">
+              <button class="spider-ext spider-button spider-btn" id="spider-schedule-run">
+                Run
+              </button>
+            </li> -->
+
+          </ul>
+        </div>
+
+        <button class="spider-ext spider-button spider-btn" id="spider-schedule-data">
+          Schedule your data
+        </button>
+
+        <select class="spider-ext" id="spider-select-pages">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <div id="spider-morebtn" class="spider-ext">
+          <div
+            id="spider-3dots"
+            class="spider-ext spider-triggerdropdown"
+          ></div>
+          <ul id="spider-moredropdown" class="spider-ext spider-dropdown">
+            <li id="spider-downloadJSON" class="spider-ext">
+              <div class="spider-ext spider-icon" id="spider-downloadsvg"></div>
+              Download JSON
+            </li>
+            <li id="spider-downloadCSV" class="spider-ext">
+              <div class="spider-ext spider-icon" id="spider-downloadsvg"></div>
+              Download CSV
+            </li>
+            <li id="spider-cleanall" class="spider-ext">
+              <div class="spider-ext spider-icon" id="spider-removesvg"></div>
+              Remove Saved Data
+            </li>
+            <li id="spider-quit" class="spider-ext">
+              <div class="spider-ext spider-icon" id="spider-quitsvg"></div>
+              Quit Spider
+            </li>
+          </ul>
+        </div>
+
+        <div id="spider-expandbtn" class="spider-ext"></div>
+      </div>
+    </div>
+
+    <div class="spider-ext" id="spider-contentwrapper">
+      <div class="spider-ext" id="spider-content"></div>
+      <div
+        class="spider-ext spider-button spider-savedfieldname"
+        id="spider-newColumn"
+      >
+        Add a Column
+      </div>
+    </div>
+
+    <a id="downloadAnchorElem" class="spider-ext" style="display:none"></a>
+  </div>
+</div>
+
+<div class="sep"></div>
+<div class="loader loader5" id="cover-spin"></div>
+
+<div id="myModal" class="modal" style="z-index: 999999;">
+  <div class="modal-content" style="min-height:88px;">
+    <span id="close" class="close spider-ext">&times;</span>
+    <p></p>
+  </div>
+</div>
